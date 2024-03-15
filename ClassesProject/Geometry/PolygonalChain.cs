@@ -12,8 +12,8 @@
         {
             var allPoints = _getAllPoints();
 
-            //if (allPoints.Any(x => x.X == midpoint.X && x.Y == midpoint.Y))
-            //    throw new ArgumentException("The midpoint already exists");
+            if (allPoints.Any(x => x.X == midpoint.X && x.Y == midpoint.Y))
+                throw new ArgumentException("The midpoint already exists");
 
             _midpoints.Add(midpoint);
         }
