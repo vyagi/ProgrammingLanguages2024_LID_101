@@ -24,11 +24,15 @@ namespace Geometry.Tests
         {
             var polygonalChain = new PolygonalChain(new Point(1, 1), new Point(2, 3));
             polygonalChain.AddMidpoint(new Point(1, 2));
-                        
+                     
+            Action addingStartPointAgain = () => polygonalChain.AddMidpoint(new Point(1, 1));
             Action addingMidpointAgain = () => polygonalChain.AddMidpoint(new Point(1, 2));
+            Action addingEndPointAgain = () => polygonalChain.AddMidpoint(new Point(2, 3));
 
             polygonalChain.Midpoints.Should().HaveCount(1);
+            addingStartPointAgain.Should().Throw<ArgumentException>();
             addingMidpointAgain.Should().Throw<ArgumentException>();
+            addingEndPointAgain.Should().Throw<ArgumentException>();
         }
     }
 }

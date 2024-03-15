@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceApplication", "Invoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry.Tests", "Geometry.Tests\Geometry.Tests.csproj", "{8A7C270D-A618-43D0-84B9-30687A8C29E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceApplication.BusinessLogic", "InvoiceApplication.BusinessLogic\InvoiceApplication.BusinessLogic.csproj", "{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceApplication.BusinessLogic.Tests", "InvoiceApplication.BusinessLogic.Tests\InvoiceApplication.BusinessLogic.Tests.csproj", "{3F0E4D71-7483-432B-BA41-B8C339972925}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8A7C270D-A618-43D0-84B9-30687A8C29E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A7C270D-A618-43D0-84B9-30687A8C29E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A7C270D-A618-43D0-84B9-30687A8C29E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0E4D71-7483-432B-BA41-B8C339972925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0E4D71-7483-432B-BA41-B8C339972925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0E4D71-7483-432B-BA41-B8C339972925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0E4D71-7483-432B-BA41-B8C339972925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

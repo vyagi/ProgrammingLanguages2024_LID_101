@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InvoiceApplication.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
@@ -27,33 +28,16 @@ namespace InvoiceApplication
             var path = pathTextBox.Text;
             var lines = File.ReadAllLines(path);
 
-            var entries = new Dictionary<string, decimal>();
+            var processor = new InvoiceProcessor();
 
-            for (int i = 1; i < lines.Length; i++)
-            {
-                var line = lines[i];
-
-                var split = line.Split(";");
-
-                var category = split[2];
-                var price = decimal.Parse(split[1]);
-
-                if (entries.ContainsKey(category))
-                {
-                    entries[category] += price;
-                }
-                else
-                {
-                    entries[category] = price;
-                }
-            }
+            var entries = processor.GroupByCategories(lines);
 
             resultTextBox.Clear();
             resultTextBox.Text += "Category\tAmount\r\n";
 
             foreach (var item in entries)
             {
-                resultTextBox.Text += $"{item.Key}\t{item.Value}{Environment.NewLine}";
+                resultTextBox.Text += $"{item.Category}\t{item.Amount}{Environment.NewLine}";
             }
 
         }
