@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "Geometry\Geometry.csproj", "{438F19D4-A77A-46CA-99F6-978A17E7FB10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceApplication", "InvoiceApplication\InvoiceApplication.csproj", "{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{438F19D4-A77A-46CA-99F6-978A17E7FB10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438F19D4-A77A-46CA-99F6-978A17E7FB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438F19D4-A77A-46CA-99F6-978A17E7FB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438F19D4-A77A-46CA-99F6-978A17E7FB10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A033F5C7-99D1-4968-BD8A-74E0801B107E}
+	EndGlobalSection
+EndGlobal
