@@ -16,11 +16,19 @@ namespace InvoiceApplication
         private void readButton_Click(object sender, EventArgs e)
         {
             var path = pathTextBox.Text;
-            var wholeText = File.ReadAllText(path);
+            
+            try
+            {
+                var wholeText = File.ReadAllText(path);
 
-            wholeText = wholeText.Replace(";", "\t");
+                wholeText = wholeText.Replace(";", "\t");
 
-            resultTextBox.Text = wholeText;
+                resultTextBox.Text = wholeText;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error occurred. Sorry");
+            }
         }
 
         private void categoryButton_Click(object sender, EventArgs e)
