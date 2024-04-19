@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceApplication", "InvoiceApplication\InvoiceApplication.csproj", "{A47AD1BD-5BCF-4C7B-98F0-FBBA763AB279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry.Tests", "Geometry.Tests\Geometry.Tests.csproj", "{8A7C270D-A618-43D0-84B9-30687A8C29E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry.Tests", "Geometry.Tests\Geometry.Tests.csproj", "{8A7C270D-A618-43D0-84B9-30687A8C29E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceApplication.BusinessLogic", "InvoiceApplication.BusinessLogic\InvoiceApplication.BusinessLogic.csproj", "{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceApplication.BusinessLogic", "InvoiceApplication.BusinessLogic\InvoiceApplication.BusinessLogic.csproj", "{90E777F7-4D71-4AFB-BA1C-A8A2F8FFE6FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceApplication.BusinessLogic.Tests", "InvoiceApplication.BusinessLogic.Tests\InvoiceApplication.BusinessLogic.Tests.csproj", "{3F0E4D71-7483-432B-BA41-B8C339972925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceApplication.BusinessLogic.Tests", "InvoiceApplication.BusinessLogic.Tests\InvoiceApplication.BusinessLogic.Tests.csproj", "{3F0E4D71-7483-432B-BA41-B8C339972925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableDemo", "DisposableDemo\DisposableDemo.csproj", "{A8CC4461-21F9-491B-8617-2142BA9D6FC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3F0E4D71-7483-432B-BA41-B8C339972925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0E4D71-7483-432B-BA41-B8C339972925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0E4D71-7483-432B-BA41-B8C339972925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CC4461-21F9-491B-8617-2142BA9D6FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CC4461-21F9-491B-8617-2142BA9D6FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CC4461-21F9-491B-8617-2142BA9D6FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CC4461-21F9-491B-8617-2142BA9D6FC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
