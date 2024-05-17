@@ -26,11 +26,11 @@ namespace InvoiceApplication.BusinessLogic.Tests
             result.First().Category.Should().Be("Food");
             result.First().Amount.Should().Be(3100);
 
-            result.Skip(1).First().Category.Should().Be("Toys");
-            result.Skip(1).First().Amount.Should().Be(2500);
+            result.Second().Category.Should().Be("Toys");
+            result.Second().Amount.Should().Be(2500);
 
-            result.Skip(2).First().Category.Should().Be("Equipment");
-            result.Skip(2).First().Amount.Should().Be(50000);
+            result.Third().Category.Should().Be("Equipment");
+            result.Third().Amount.Should().Be(50000);
         }
     }
 }

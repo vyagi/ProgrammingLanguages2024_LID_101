@@ -1,12 +1,14 @@
-﻿namespace Geometry
+﻿using System.Collections;
+
+namespace Geometry
 {
-    public class PolygonalChain : Segment, IMoveable
+    public class PolygonalChain : Segment, IMoveable, IEnumerable<Point>
     {
         private List<Point> _midpoints = new List<Point>();
 
         public PolygonalChain(Point start, Point end) : base(start, end) { }
 
-        public List<Point> Midpoints => _midpoints.Select(x=>x).ToList();
+        public IReadOnlyCollection<Point> Midpoints => _midpoints.Select(x=>x).ToList();
 
         public void AddMidpoint(Point midpoint)
         {
@@ -55,5 +57,17 @@
 
             return allPoints;
         }
+
+        public IEnumerator<Point> GetEnumerator()
+        {
+            yield return _start;
+
+            foreach (var midpoint in Midpoints)
+                yield return midpoint;
+
+            yield return _end;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
