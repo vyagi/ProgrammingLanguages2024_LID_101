@@ -15,11 +15,9 @@
             //Console.WriteLine(integrator.Integrate(functionDelegate));
 
             //A bit newer way
-            //Console.WriteLine(integrator.Integrate(Sinuser));
-            //Console.WriteLine(integrator.Integrate(x => Math.Sqrt(x)));
-            //Console.WriteLine(integrator.Integrate(Math.Sqrt));
-
-            Console.WriteLine(integrator.Integrate(new Squarer()));
+            Console.WriteLine(integrator.Integrate(Sinuser));
+            Console.WriteLine(integrator.Integrate(x => Math.Sqrt(x)));
+            Console.WriteLine(integrator.Integrate(Math.Sqrt));
         }
 
         public static double Squarer(double x) => x * x;
@@ -30,19 +28,6 @@
     //Old school - keep it in the passive C# knowledge
     //public delegate double IntegrableFunction(double x);
 
-    public class Squarer : IIntegrableFunction
-    {
-        public double Integrate(double x)
-        {
-            return x * x;
-        }
-    }
-
-    public interface IIntegrableFunction
-    {
-        double Integrate(double x);
-    }
-
     public class Integrator
     {
         public double StartingPoint { get; } = 0;
@@ -52,7 +37,7 @@
         //public double Integrate(IntegrableFunction function)
         
         //New school
-        public double Integrate(IIntegrableFunction function)
+        public double Integrate(Func<double, double> function)
         {
             var arguments = new double[Midpoints + 1];
             var values = new double[Midpoints + 1];
@@ -62,7 +47,7 @@
             for (int i = 0; i <= Midpoints; i++)
             {
                 arguments[i] = StartingPoint + i * argumentStep;
-                values[i] = function.Integrate(arguments[i]);
+                values[i] = function(arguments[i]);
             }
 
             var sum = 0.0;
