@@ -28,6 +28,8 @@
     //Old school - keep it in the passive C# knowledge
     //public delegate double IntegrableFunction(double x);
 
+    //Home work - improve this class to be possible to set (change) the starting point, ending point
+    //And the number of midpoints
     public class Integrator
     {
         public double StartingPoint { get; } = 0;
