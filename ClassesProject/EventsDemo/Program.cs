@@ -22,7 +22,7 @@ public class FloorReachedEventArgs : EventArgs
 
 public class BetterElevator
 {
-    public EventHandler<FloorReachedEventArgs> FloorReachedEvent;
+    public event EventHandler<FloorReachedEventArgs> FloorReachedEvent;
     public int CurrentFloor { get; private set; }
     public int MaxFloor => 5;
     public int MinFloor => 0;
