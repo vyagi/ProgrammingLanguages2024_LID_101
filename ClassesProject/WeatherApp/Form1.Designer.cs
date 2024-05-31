@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -45,9 +46,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 12);
+            this.textBox1.Location = new System.Drawing.Point(422, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(676, 23);
+            this.textBox1.Size = new System.Drawing.Size(264, 23);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "https://localhost:7169/weatherforecast";
             // 
@@ -59,11 +60,20 @@
             this.textBox2.Size = new System.Drawing.Size(757, 383);
             this.textBox2.TabIndex = 2;
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(14, 13);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(402, 23);
+            this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "Astana,London,Rzeszow";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 450);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -79,5 +89,6 @@
         private Button button1;
         private TextBox textBox1;
         private TextBox textBox2;
+        private TextBox textBox3;
     }
 }

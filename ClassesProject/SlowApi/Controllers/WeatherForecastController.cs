@@ -23,7 +23,7 @@ namespace SlowApi.Controllers
         {
             //Thread.Sleep(5000); //Never do this in normal programming (only for some demo)
 
-            await Task.Delay(5000);
+            await Task.Delay(new Random().Next(3000));
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
