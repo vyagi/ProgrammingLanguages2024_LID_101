@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsDemo", "EventsDemo\Ev
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SomeStuff", "SomeStuff\SomeStuff.csproj", "{CCA9841E-8C76-4B75-A14A-6FBC4852D2E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutltithreadingDemo", "MutltithreadingDemo\MutltithreadingDemo.csproj", "{A1BD012C-1359-4207-AC53-EDC84456A905}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutltithreadingDemo", "MutltithreadingDemo\MutltithreadingDemo.csproj", "{A1BD012C-1359-4207-AC53-EDC84456A905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{EA912787-F476-46C3-A809-09A533AA6CC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{EA912787-F476-46C3-A809-09A533AA6CC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowApi", "SlowApi\SlowApi.csproj", "{666BDAD4-D7AB-44C8-9765-5D08EE107589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlowApi", "SlowApi\SlowApi.csproj", "{666BDAD4-D7AB-44C8-9765-5D08EE107589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTutorial", "LinqTutorial\LinqTutorial.csproj", "{842386C6-20B1-4F0D-8ADE-82027A24B42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{666BDAD4-D7AB-44C8-9765-5D08EE107589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{666BDAD4-D7AB-44C8-9765-5D08EE107589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{666BDAD4-D7AB-44C8-9765-5D08EE107589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842386C6-20B1-4F0D-8ADE-82027A24B42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842386C6-20B1-4F0D-8ADE-82027A24B42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842386C6-20B1-4F0D-8ADE-82027A24B42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842386C6-20B1-4F0D-8ADE-82027A24B42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
